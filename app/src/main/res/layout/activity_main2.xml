@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sari"
+    tools:context="com.example.memorygame.Main2Activity">
+
+    <ImageView
+        android:id="@+id/resimm"
+        android:layout_width="379dp"
+        android:layout_height="357dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/resim" />
+
+    <Button
+        android:id="@+id/giris"
+        android:layout_width="231dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="56dp"
+        android:background="@color/sarii"
+        android:onClick="giris"
+        android:text="Oyuna Başla"
+        android:textColor="#000000"
+        android:textColorHint="#CC3F3F"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resimm" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="244dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="88dp"
+        android:fontFamily="@font/simonetta_regular"
+        android:text="HAFIZA OYUNU "
+        android:textColor="#171616"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/cikis"
+        android:layout_width="231dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/sarii"
+        android:onClick="cikis"
+        android:text="Çıkış"
+        android:textColor="#000000"
+        android:textColorHighlight="#E10606"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/giris" />
+
+</android.support.constraint.ConstraintLayout>
